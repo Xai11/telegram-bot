@@ -1,0 +1,106 @@
+2024-07-23 09:44:45,627 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 44058 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 09:44:45,628 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 09:44:45,629 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 09:44:47,263 INFO c.e.BotApplication [main] Started BotApplication in 2.026 seconds (process running for 2.818)
+2024-07-23 09:45:16,880 INFO c.e.s.TelegramBot [DemoBot Telegram Executor] Ответил пользователю: Alexandr Kochetov
+2024-07-23 09:46:22,787 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.telegram_bot.TelegramBotApplicationTests]: TelegramBotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-07-23 09:46:22,880 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.BotApplication for test class com.example.telegram_bot.TelegramBotApplicationTests
+2024-07-23 09:46:23,295 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/alex/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/alex/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-07-23 09:46:23,315 INFO c.e.t.TelegramBotApplicationTests [main] Starting TelegramBotApplicationTests using Java 22.0.1 with PID 44470 (started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 09:46:23,315 DEBUG c.e.t.TelegramBotApplicationTests [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 09:46:23,316 INFO c.e.t.TelegramBotApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 09:46:24,810 INFO c.e.t.TelegramBotApplicationTests [main] Started TelegramBotApplicationTests in 1.807 seconds (process running for 2.974)
+2024-07-23 09:46:25,025 ERROR o.t.t.u.DefaultBotSession [DemoBot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2024-07-23 09:46:44,144 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 44583 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 09:46:44,145 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 09:46:44,146 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 09:46:45,728 INFO c.e.BotApplication [main] Started BotApplication in 1.968 seconds (process running for 2.642)
+2024-07-23 09:49:25,803 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.telegram_bot.TelegramBotApplicationTests]: TelegramBotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-07-23 09:49:25,895 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.BotApplication for test class com.example.telegram_bot.TelegramBotApplicationTests
+2024-07-23 09:49:26,264 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/alex/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/alex/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-07-23 09:49:26,276 INFO c.e.t.TelegramBotApplicationTests [main] Starting TelegramBotApplicationTests using Java 22.0.1 with PID 44775 (started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 09:49:26,276 DEBUG c.e.t.TelegramBotApplicationTests [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 09:49:26,277 INFO c.e.t.TelegramBotApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 09:49:32,713 INFO c.e.t.TelegramBotApplicationTests [main] Started TelegramBotApplicationTests in 6.715 seconds (process running for 7.845)
+2024-07-23 10:35:06,262 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 47543 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 10:35:06,264 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 10:35:06,265 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 10:35:08,020 INFO c.e.BotApplication [main] Started BotApplication in 2.199 seconds (process running for 3.117)
+2024-07-23 10:35:12,514 INFO c.e.s.TelegramBot [DemoBot Telegram Executor] Ответил пользователю: Alexandr Kochetov
+2024-07-23 11:58:36,373 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 50545 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 11:58:36,374 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 11:58:36,375 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 11:58:37,927 INFO c.e.BotApplication [main] Started BotApplication in 1.916 seconds (process running for 2.628)
+2024-07-23 12:02:02,655 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 50818 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 12:02:02,656 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 12:02:02,657 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 12:02:04,013 INFO c.e.BotApplication [main] Started BotApplication in 1.722 seconds (process running for 2.378)
+2024-07-23 12:10:41,277 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 51248 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 12:10:41,278 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 12:10:41,279 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 12:10:42,772 INFO c.e.BotApplication [main] Started BotApplication in 1.893 seconds (process running for 2.623)
+2024-07-23 12:11:00,386 INFO c.e.s.TelegramBot [DemoBot Telegram Executor] Ответил пользователю: Alexandr Kochetov
+2024-07-23 12:27:48,074 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 52453 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 12:27:48,075 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 12:27:48,076 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 12:27:49,746 INFO c.e.BotApplication [main] Started BotApplication in 2.114 seconds (process running for 2.828)
+2024-07-23 12:27:54,476 INFO c.e.s.TelegramBot [DemoBot Telegram Executor] Ответил пользователю: Alexandr Kochetov
+2024-07-23 15:38:38,522 INFO c.e.BotApplication [main] Starting BotApplication using Java 22.0.1 with PID 3485 (/home/alex/Рабочий стол/Project/IntellijProj/telegram-bot/target/classes started by alex in /home/alex/Рабочий стол/Project/IntellijProj/telegram-bot)
+2024-07-23 15:38:38,523 DEBUG c.e.BotApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-23 15:38:38,523 INFO c.e.BotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-23 15:38:40,836 INFO c.e.BotApplication [main] Started BotApplication in 2.761 seconds (process running for 3.712)
+2024-07-23 15:38:51,362 INFO c.e.s.TelegramBot [DemoBot Telegram Executor] Ответил пользователю: Alexandr Kochetov
+2024-07-24 02:06:44,242 ERROR o.t.t.u.DefaultBotSession [DemoBot Telegram Connection] api.telegram.org:443 failed to respond
+org.apache.http.NoHttpResponseException: api.telegram.org:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2024-07-24 02:07:35,873 ERROR o.t.t.u.DefaultBotSession [DemoBot Telegram Connection] api.telegram.org:443 failed to respond
+org.apache.http.NoHttpResponseException: api.telegram.org:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
