@@ -1,4 +1,5 @@
---- my first telegram-bot on java ---
+--- my first telegram-bot on java --- 
+
 Обычный телеграм-бот с базовым функционалом.
 Добавлен логгер Slf4j, логи хранятся в var/log/tg-DemoBot/app.log
 
