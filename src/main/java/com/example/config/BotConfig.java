@@ -1,7 +1,9 @@
 package com.example.config;
 
+import com.example.service.EquationGenerator;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
@@ -15,4 +17,9 @@ public class BotConfig {
 
     @Value("${bot.token}")
     String token;
+
+    @Bean
+    public EquationGenerator equationGenerator() {
+        return new EquationGenerator();
+    }
 }

@@ -14,20 +14,23 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 @Component
 @Slf4j
 public class TelegramBot extends TelegramLongPollingBot {
-    final String HELP_TEXT = "Ну ты капец крутой";
+    final String HELP_TEXT = "Основной задачей бота является выдача ссылки на составление" +
+                             " уравнений с одной неизвестной.\n\n" +
+                             "Для получения ссылки нажмите в меню /equation";
     final BotConfig config;
     public TelegramBot (BotConfig config){
         this.config = config;
         List<BotCommand> listOfCommand = new ArrayList<>(Arrays.asList(
-            new BotCommand("/start", "get a welcome message"),
-            new BotCommand("/mydata", "get your data stored"),
-            new BotCommand("/deletedata", "delete my data"),
-            new BotCommand("/help", "info how to use this bot"),
-            new BotCommand("/settings", "set your preferences"))
+            new BotCommand("/start", "получить сообщение о приветствии"),
+            new BotCommand("/equation", "получить ссылку на уравнения"),
+            new BotCommand("/help", "информация о том, " +
+                    "как использовать бота"))
+
         );
 
         try {
@@ -56,6 +59,11 @@ public class TelegramBot extends TelegramLongPollingBot {
                     startCommandReceived(chatId,
                             update.getMessage().getChat().getFirstName());
                     break;
+                case "/equation":
+                        EquationGenerator equationGenerator = config.equationGenerator();
+                        sendMessage(chatId, "Ссылка на уравнения: "
+                                + equationGenerator.getEquationUrl(determineTheDifficult()));
+                    break;
                 case "/help":
                     sendMessage(chatId, HELP_TEXT);
                     break;
@@ -66,21 +74,23 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
     private void startCommandReceived(long chatId, String name) {
-
-        String answer = "Hi, " + name + ", nice to meet you!";
-        log.info("Ответил пользователю: " + name);
+        String answer = "Здравствуй, " + name + ", рад тебя видеть";
+        log.info("Reply to user: " + name);
         sendMessage(chatId, answer);
     }
     private void sendMessage(long chatId, String textToSend) {
         SendMessage message = new SendMessage();
         message.setChatId(String.valueOf(chatId));
         message.setText(textToSend);
-
         try {
             execute(message);
         } catch (TelegramApiException e) {
-            log.error("Ошибка" + e.getMessage());
+            log.error("Error" + e.getMessage());
         }
+    }
+    private int determineTheDifficult() {
+        Random number = new Random();
+        return number.nextInt(2);
     }
 
 }
