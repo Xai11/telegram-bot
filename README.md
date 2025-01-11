@@ -1,5 +1,5 @@
-# telegram bot in java
-Телеграмм бот для прорешивания уравнений с одной неизвестной
+# telegram-bot
+Телеграмм бот для генерации уравнений с одной неизвестной
 ## Функционал
 - __/start__ - команда запуска бота
 - __/help__ - команда для отображения вспомогательного сообщения
@@ -13,7 +13,7 @@
 - Slf4j
 ## Логирование
 Был использован логгер _Slf4j_ из Lombok.  
-Логи хранятся в `var/log/tg-DemoBot/app.log`
+Логи хранятся в `var/log/tg-DemoBot/app.log`  
 [Переход к логам](https://github.com/Xai11/telegram-bot/blob/master/var/log/tg-DemoBot/app.log)
 
 
